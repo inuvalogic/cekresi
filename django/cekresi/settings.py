@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-huhvicoel#z*eq1cl%vkhp%u1^hbrovw(%%zn!4ykv3lt!$xif
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -75,15 +75,15 @@ WSGI_APPLICATION = 'cekresi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'cekresi',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'charset': 'utf8mb4'
-        }
+        'ENGINE': 'django.db.backends.sqlite3', 
+        # 'NAME': 'cekresi',
+        # 'USER': 'root',
+        # 'PASSWORD': '',
+        # 'HOST': 'localhost',
+        # 'PORT': '3306',
+        # 'OPTIONS': {
+        #     'charset': 'utf8mb4'
+        # }
     }
 }
 
